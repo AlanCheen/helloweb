@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position Relative</title>
+
+    <style>
+        .relative {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #FFB5BF;
+            position: relative; /*如果注释掉了这个position，那么 absolute 会找到最上层浏览器窗口 进行定位*/
+        }
+
+        .absolute {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #94E8FF;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="relative">
+    relative
+    <div class="absolute">absolute</div>
+</div>
+
+</body>
+</html>
