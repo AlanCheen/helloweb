@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Hybrid</title>
+    
+    
+    <script>
+        
+        function callJSAlert() {
+            alert("调用了JS的callJSAlert");
+        }
+
+        function callJSAlertWithParams(params) {
+            alert("调用了JS的callJSAlertWithParams,并携带了参数："+params);
+        }
+        
+        function toast() {
+            alert("toast alert")
+
+        }
+        function toastWithParams() {
+            alert("toast with params")
+        }
+    </script>
+</head>
+<body>
+
+<p>练习 HTML 跟 WebView 的交互。</p>
+
+<button onclick="toast()">点击我弹 Toast</button>
+<button onclick="toastWithParams()">点击我弹 Toast 带参数</button>
+
+
+
+
+</body>
+</html>

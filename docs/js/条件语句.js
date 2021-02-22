@@ -40,8 +40,11 @@ function testSwitch(value) {
 
 testSwitch('a');
 testSwitch('1');
-
+testSwitch(1);
+testSwitch(null);
 // 1
+// 什么玩意
+// a
 // 什么玩意
 
 
@@ -56,6 +59,14 @@ switch (x) {
 }
 // x 没有发生类型转换
 
+
+//while
+
+var aaa =1;
+while(aaa<4){
+    aaa++;
+    console.log("while:"+aaa);
+}
 
 //do...while 循环
 var tmp =1;

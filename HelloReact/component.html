@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Component 练习</title>
+<script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+<script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+<script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+
+    <div id="button"></div>
+
+    <script type="text/babel"> 
+    
+    class ButtonComponent extends React.Component {
+        
+        constructor(){
+            super();
+            this.state = {
+                name = "name"
+            }
+        }
+        
+        handleClick(){
+            console.log('Button Clicked');
+        };
+
+        render() {
+            return (
+                <div>
+                <button onClick={(e)==this.handleClick(e)}>
+                Click me
+                </button>
+                </div>
+            );
+        }
+    }
+
+    class TextComponent extends React.Component{
+
+        render(){
+
+            return(
+                <h1>Text Component</h1>
+            )
+        }
+    }
+
+    ReactDOM.render(
+        <TextComponent />,
+        document.getElementById('button')
+    );
+
+    </script>
+
+</body>
+
+</html>
